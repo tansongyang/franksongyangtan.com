@@ -3,6 +3,7 @@ module.exports = {
     title: 'Frank Songyang Tan',
   },
   plugins: [
+    'gatsby-plugin-catch-links',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -29,8 +30,16 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
 
     // Transformer plugins
+    'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
   ],
 }
