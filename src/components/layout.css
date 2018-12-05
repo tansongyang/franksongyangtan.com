@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@value maxMobileWidth: 480px;
+@value openSans: 'Open Sans', sans-serif;
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -617,7 +622,7 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: maxMobileWidth) {
   html {
     font-size: 100%;
   }
