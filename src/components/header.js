@@ -6,12 +6,21 @@ import styles from './header.module.css'
 
 const Header = ({ siteTitle }) => (
   <div className={styles.header}>
-    <div className={styles.innerWrapper}>
-      <h1 className={styles.h1}>
+    <div className={styles.innerHeader}>
+      <h1 className={styles.heading}>
         <Link to="/" className={styles.link}>
           {siteTitle}
         </Link>
       </h1>
+      <nav class={styles.nav}>
+        <ul class={styles.navList}>
+          <li class={styles.navListItem}>
+            <Link to="/seminary" className={styles.link}>
+              Seminary
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
 )
