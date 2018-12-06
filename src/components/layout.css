@@ -6,6 +6,7 @@
 @value menuFont: 'Open Sans', sans-serif;
 @value textFont: 'Libre Baskerville', serif;
 
+@value linkBlue: #428bca;
 @value offWhite: #f8f8f8;
 
 @value maxMobileWidth: 480px;
@@ -52,7 +53,9 @@ template {
 }
 a {
   background-color: transparent;
+  color: linkBlue;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
 }
 a:active,
 a:hover {
