@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 
-import Entry from '../components/Entry'
+import Entry from '../components/entry'
 import Layout from '../components/layout'
 
 export default function Template({ data }) {

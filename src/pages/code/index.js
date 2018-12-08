@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 import Entry from '../../components/entry'
 import Layout from '../../components/layout'
-import Link from '../../components/Link'
+import Link from '../../components/link'
 
 const SIDE_PROJECTS = [
   {
