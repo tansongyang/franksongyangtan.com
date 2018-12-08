@@ -4,22 +4,21 @@ import Helmet from 'react-helmet'
 import Entry from '../../components/entry'
 import Layout from '../../components/layout'
 
-const TITLE = 'Seminary Posts'
-
 export default function SeminaryIndexPage({ data }) {
   const { edges } = data.allMarkdownRemark
   return (
     <Layout>
-      <Helmet title={TITLE} />
+      <Helmet title="Seminary" />
       {edges.map(({ node: post }) => {
         return (
           <article>
             <Entry
-              description={post.excerpt}
               timestamp={post.frontmatter.date}
               title={post.frontmatter.title}
               titleLink={post.frontmatter.path}
-            />
+            >
+              {post.excerpt}
+            </Entry>
           </article>
         )
       })}

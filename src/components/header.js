@@ -4,6 +4,11 @@ import { Link } from 'gatsby'
 
 import styles from './header.module.css'
 
+const LINKS = [
+  { text: 'Code', to: '/code' },
+  { text: 'Seminary', to: '/seminary' },
+]
+
 const Header = ({ siteTitle }) => (
   <header className={styles.header}>
     <div className={styles.innerHeader}>
@@ -14,11 +19,13 @@ const Header = ({ siteTitle }) => (
       </h1>
       <nav class={styles.nav}>
         <ul class={styles.navList}>
-          <li class={styles.navListItem}>
-            <Link to="/seminary" className={styles.link}>
-              Seminary
-            </Link>
-          </li>
+          {LINKS.map(link => (
+            <li class={styles.navListItem}>
+              <Link to={link.to} className={styles.link}>
+                {link.text}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </div>
