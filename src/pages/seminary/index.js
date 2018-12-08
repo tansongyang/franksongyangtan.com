@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link } from 'gatsby'
 
+import Entry from '../../components/entry'
 import Layout from '../../components/layout'
 
 const TITLE = 'Seminary Posts'
@@ -14,9 +14,12 @@ export default function SeminaryIndexPage({ data }) {
       {edges.map(({ node: post }) => {
         return (
           <article>
-            <h1>
-              <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
-            </h1>
+            <Entry
+              description={post.excerpt}
+              timestamp={post.frontmatter.date}
+              title={post.frontmatter.title}
+              titleLink={post.frontmatter.path}
+            />
           </article>
         )
       })}
@@ -38,7 +41,7 @@ export const pageQuery = graphql`
           frontmatter {
             path
             title
-            date(formatString: "MMMM Do, YYYY")
+            date
           }
         }
       }

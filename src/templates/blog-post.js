@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 
+import Entry from '../components/Entry'
 import Layout from '../components/layout'
 
 export default function Template({ data }) {
@@ -10,7 +11,10 @@ export default function Template({ data }) {
     <Layout>
       <Helmet title={post.frontmatter.title} />
       <div className="blog-post">
-        <h1>{post.frontmatter.title}</h1>
+        <Entry
+          timestamp={post.frontmatter.date}
+          title={post.frontmatter.title}
+        />
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -26,6 +30,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        date
       }
     }
   }

@@ -1,0 +1,14 @@
+@value layout: './layout.css';
+@value grayish from layout;
+
+.title {
+  margin-bottom: 0.5rem;
+}
+
+.timestamp {
+  display: block;
+  margin-bottom: 1rem;
+  color: grayish;
+  font-size: 0.75rem;
+  font-style: italic;
+}
