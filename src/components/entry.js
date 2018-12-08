@@ -15,7 +15,7 @@ const Entry = ({ children, hTag, timestamp, title, titleLink }) => {
       <Tag className={styles.title}>{titleContent}</Tag>
       {timestamp && (
         <time className={styles.timestamp} dateTime={timestamp}>
-          {format(new Date(timestamp), DATE)}
+          {format(timestamp, DATE)}
         </time>
       )}
       <p>{children}</p>
