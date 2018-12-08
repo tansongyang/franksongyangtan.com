@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import styles from './header.module.css'
 
 const Header = ({ siteTitle }) => (
-  <div className={styles.header}>
+  <header className={styles.header}>
     <div className={styles.innerHeader}>
       <h1 className={styles.heading}>
         <Link to="/" className={styles.link}>
@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
         </ul>
       </nav>
     </div>
-  </div>
+  </header>
 )
 
 Header.propTypes = {
