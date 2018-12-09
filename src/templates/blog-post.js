@@ -10,16 +10,13 @@ export default function Template({ data }) {
   return (
     <Layout>
       <Helmet title={post.frontmatter.title} />
-      <div className="blog-post">
+      <article>
         <Entry
           timestamp={post.frontmatter.date}
           title={post.frontmatter.title}
         />
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
-      </div>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </article>
     </Layout>
   )
 }
