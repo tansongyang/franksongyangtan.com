@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-@value headingFont: 'Noto Sans', serif;
+@value headingFont: 'Noto Sans SC', serif;
 @value menuFont: 'Open Sans', sans-serif;
-@value textFont: 'Noto Sans', serif;
+@value textFont: 'Noto Sans SC', serif;
 
 @value grayish: #333;
 @value linkBlue: #428bca;
