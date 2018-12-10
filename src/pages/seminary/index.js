@@ -26,7 +26,7 @@ export default function SeminaryIndexPage({ data }) {
               title={post.frontmatter.title}
               titleLink={post.frontmatter.path}
             >
-              {post.excerpt}
+              {post.frontmatter.description}
             </Entry>
           </article>
         )
@@ -44,11 +44,10 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 250)
-          id
           frontmatter {
             path
             title
+            description
             date
           }
         }
