@@ -5,7 +5,7 @@
 @value menuFont: 'Open Sans', sans-serif;
 @value textFont: 'Noto Sans SC', serif;
 
-@value grayish: #333;
+@value grayish: hsla(0, 0%, 0%, 0.6);
 @value linkBlue: #428bca;
 @value offWhite: #f8f8f8;
 
@@ -450,11 +450,14 @@ blockquote {
   margin-left: 1.45rem;
   margin-right: 1.45rem;
   margin-top: 0;
+  border-left: 0.4rem solid hsla(291, 0%, 18%, 0.1);
   padding-bottom: 0;
-  padding-left: 0;
+  padding-left: 0.8rem;
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  color: grayish;
+  font-style: italic;
 }
 form {
   margin-left: 0;
