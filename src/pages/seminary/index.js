@@ -13,7 +13,7 @@ export default function SeminaryIndexPage({ data }) {
       <Helmet title="Seminary" />
       <h1>Seminary</h1>
       <p>
-        This is a series about my seminary studies. You can{' '}
+        This is a blog about my seminary studies. You can{' '}
         <Link to="/seminary/about">read more about it</Link> or go straight to
         an entry.
       </p>

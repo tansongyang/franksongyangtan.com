@@ -13,7 +13,7 @@ const LINKS = [
 const CONTEXTUAL_LINKS = [
   {
     pathnamePrefix: '/seminary/',
-    text: 'About this series',
+    text: 'About this blog',
     to: '/seminary/about',
   },
 ]
