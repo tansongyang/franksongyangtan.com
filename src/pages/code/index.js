@@ -56,7 +56,7 @@ export default function CodeIndexPage() {
         favorites:
       </p>
       {SIDE_PROJECTS.map(project => (
-        <article>
+        <article key={project.link}>
           <Entry hTag="h3" title={project.title} titleLink={project.link}>
             {project.description}
           </Entry>

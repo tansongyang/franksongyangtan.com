@@ -34,10 +34,10 @@ const Header = ({ siteTitle }) => (
                   {siteTitle}
                 </Link>
               </h1>
-              <nav class={styles.nav}>
-                <ul class={styles.navList}>
+              <nav className={styles.nav}>
+                <ul className={styles.navList}>
                   {LINKS.map(link => (
-                    <li class={styles.navListItem}>
+                    <li key={link.to} className={styles.navListItem}>
                       <Link to={link.to} className={styles.link}>
                         {link.text}
                       </Link>

@@ -19,7 +19,7 @@ export default function SeminaryIndexPage({ data }) {
       </p>
       {edges.map(({ node: post }) => {
         return (
-          <article>
+          <article key={post.frontmatter.path}>
             <Entry
               hTag="h2"
               timestamp={post.frontmatter.date}
