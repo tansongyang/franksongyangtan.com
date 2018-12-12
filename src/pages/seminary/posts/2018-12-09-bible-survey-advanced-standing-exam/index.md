@@ -1,5 +1,5 @@
 ---
-path: '/seminary/advanced-standing-bible-survey'
+path: '/seminary/bible-survey-advanced-standing-exam'
 category: 'seminary'
 title: 'Bible Survey: The Advanced Standing Exam'
 description: "What's required to pass the Advanced Standing exam for Bible Survey?"
