@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 
 import Entry from '../components/entry'
+import HtmlAstRenderer from '../components/htmlAstRenderer'
 import Layout from '../components/layout'
 
 export default function Template({ data }) {
@@ -15,7 +16,7 @@ export default function Template({ data }) {
           timestamp={post.frontmatter.date}
           title={post.frontmatter.title}
         />
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <HtmlAstRenderer htmlAst={post.htmlAst} />
       </article>
     </Layout>
   )
@@ -24,7 +25,7 @@ export default function Template({ data }) {
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
+      htmlAst
       frontmatter {
         title
         date
