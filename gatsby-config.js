@@ -21,6 +21,7 @@ module.exports = {
     // 'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-typescript',
 
     // Source plugins
     {
