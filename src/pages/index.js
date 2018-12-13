@@ -1,7 +1,11 @@
 import React from 'react'
 
+import ReactModal from 'react-modal'
+
 import Layout from '../components/layout'
 import Link from '../components/link'
+
+ReactModal.setAppElement('body')
 
 export default function IndexPage() {
   return (

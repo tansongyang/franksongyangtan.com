@@ -5,11 +5,25 @@
 @value menuFont: 'Open Sans', sans-serif;
 @value textFont: 'Noto Sans SC', serif;
 
-@value grayish: hsla(0, 0%, 0%, 0.6);
+@value accentColor: black;
+@value grayish: #707070;
 @value linkBlue: #428bca;
+@value negativeRed: #db4437;
 @value offWhite: #f8f8f8;
+@value positiveGreen: #0f9d58;
+@value textColor: hsla(0, 0%, 0%, 0.8);
 
 @value maxMobileWidth: 480px;
+@value maxWidth: 960px;
+
+.interactive {
+  background: accentColor;
+  color: offWhite;
+  font-family: menuFont;
+  font-size: 0.75rem;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
 
 html {
   font-family: sans-serif;
@@ -213,7 +227,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: textColor;
   font-family: textFont;
   font-weight: normal;
   word-wrap: break-word;
@@ -630,6 +644,16 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: '';
+}
+input[type='text'] {
+  border: 2px solid accentColor;
+  border-radius: 4px;
+  padding: 0.5rem;
+  background: offWhite;
+}
+input[type='text']:focus {
+  outline: none;
+  border-color: linkBlue;
 }
 @media only screen and (max-width: maxMobileWidth) {
   html {

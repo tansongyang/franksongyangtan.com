@@ -1,0 +1,31 @@
+@value accentColor, grayish, interactive, linkBlue from './layout.css';
+
+.base:disabled {
+  cursor: default;
+}
+
+.button {
+  composes: base;
+  composes: interactive;
+  border: 2px solid accentColor;
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+}
+.button:focus {
+  border-color: linkBlue;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button:active {
+  outline: none;
+  border-color: grayish;
+  background: grayish;
+}
+
+.iconButton {
+  composes: base;
+  cursor: pointer;
+  border: none;
+  background: none;
+}

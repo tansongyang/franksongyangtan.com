@@ -1,0 +1,38 @@
+@value negativeRed, positiveGreen from './layout.css';
+
+.quizName {
+  margin: 0;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.perfect {
+  composes: summary;
+  color: positiveGreen;
+}
+
+.correct {
+  color: positiveGreen;
+}
+
+.incorrect {
+  color: negativeRed;
+}
+
+.question {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.answer {
+  width: 100%;
+}
+
+.footerRow {
+  display: flex;
+  justify-content: center;
+}
