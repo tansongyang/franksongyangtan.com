@@ -20,4 +20,6 @@ The study guide[^1] for the exam states that you need to know the following:
 
 In the next few posts, I'll break down each of the sections above and how I'm studying for them.
 
+1. [Canonical order of the biblical books](/seminary/bible-survey-books-quiz)
+
 [^1]: The study guide is only available to Calvin Seminary students. To avoid plagiarism, I won't copy and paste anything beyond what the exam is testing you on.

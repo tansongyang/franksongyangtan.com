@@ -6,12 +6,11 @@ description: 'A quiz on the books of the Bible.'
 date: '2018-12-11'
 ---
 
-This is a little quiz on the books of the Bible. Its purpose is to help prepare for two of the
-requirements that I mentioned in my
-<x-link to="/seminary/bible-survey-advanced-standing-exam">last post</x-link>:
+This is a little quiz on the **canonical order of the biblical books**.
+Its purpose is to help prepare for the Bible Survey advanced standing exam.
 
-> Themes of the biblical books<br>
-> Canonical order of the biblical books
+More details on the exam are in
+<x-link to="/seminary/bible-survey-advanced-standing-exam">this post</x-link>:
 
 <x-quiz
     name="Bible Books Quiz"
