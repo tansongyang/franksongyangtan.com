@@ -1,16 +1,12 @@
 ---
-path: '/seminary/bible-survey-books-quiz'
+path: '/seminary/bible-books-quiz'
 category: 'seminary'
-title: 'Bible Survey: The Books Quiz'
+title: 'The Bible Books Quiz'
 description: 'A quiz on the books of the Bible.'
 date: '2018-12-11'
 ---
 
 This is a little quiz on the **canonical order of the biblical books**.
-Its purpose is to help prepare for the Bible Survey advanced standing exam.
-
-More details on the exam are in
-<x-link to="/seminary/bible-survey-advanced-standing-exam">this post</x-link>:
 
 <x-quiz
     name="Bible Books Quiz"
@@ -84,3 +80,6 @@ More details on the exam are in
     ]'>
 
 </x-quiz>
+
+I originally built this to help prepare for the
+<x-link to="/seminary/bible-survey-advanced-standing-exam">Bible Survey Advanced Standing Exam</x-link>.
