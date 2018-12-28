@@ -7,10 +7,10 @@
 
 @value accentColor: black;
 @value grayish: #707070;
-@value linkBlue: #428bca;
-@value negativeRed: #db4437;
+@value linkBlue: #1368f1;
+@value negativeRed: #d33527;
 @value offWhite: #f8f8f8;
-@value positiveGreen: #0f9d58;
+@value positiveGreen: #0d8249;
 @value textColor: hsla(0, 0%, 0%, 0.8);
 
 @value maxMobileWidth: 480px;
@@ -70,6 +70,9 @@ a {
   color: linkBlue;
   -webkit-text-decoration-skip: objects;
   text-decoration: none;
+}
+a:focus {
+  outline-color: linkBlue;
 }
 a:active,
 a:hover {
