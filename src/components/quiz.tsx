@@ -74,8 +74,10 @@ export default class Quiz extends React.Component<Props, State> {
             : correctAnswer.join(', '),
         isCorrect:
           typeof correctAnswer === 'string'
-            ? answer.trim() === correctAnswer
-            : correctAnswer.includes(answer.trim()),
+            ? answer.trim().toLowerCase() === correctAnswer.toLowerCase()
+            : correctAnswer
+                .map(a => a.toLowerCase())
+                .includes(answer.trim().toLowerCase()),
         question,
       }
     })
