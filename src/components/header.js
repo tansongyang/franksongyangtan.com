@@ -38,7 +38,14 @@ const Header = ({ siteTitle }) => (
                 <ul className={styles.navList}>
                   {LINKS.map(link => (
                     <li key={link.to} className={styles.navListItem}>
-                      <Link to={link.to} className={styles.link}>
+                      <Link
+                        to={link.to}
+                        className={
+                          pathname.startsWith(link.to)
+                            ? styles.activeLink
+                            : styles.link
+                        }
+                      >
                         {link.text}
                       </Link>
                     </li>

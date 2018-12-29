@@ -16,12 +16,13 @@
 @value maxMobileWidth: 480px;
 @value maxWidth: 960px;
 
+@value interactiveLetterSpacing: 0.25rem;
 .interactive {
   background: accentColor;
   color: offWhite;
   font-family: menuFont;
   font-size: 0.75rem;
-  letter-spacing: 0.25rem;
+  letter-spacing: interactiveLetterSpacing;
   text-transform: uppercase;
 }
 
