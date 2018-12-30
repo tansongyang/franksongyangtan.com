@@ -6,10 +6,8 @@ description: "What's required to pass the Advanced Standing Exam for Bible Surve
 date: '2018-12-09'
 ---
 
-My first seminary goal is passing the Advanced Standing Exam for Bible Survey.
-If you pass an exam, you can earn credit for a course without having to take it.
-
-The study guide[^1] for the exam states that you need to know the following:
+My first seminary goal is passing the Advanced Standing Exam[^1] for Bible Survey.
+The study guide[^2] for the exam states that you need to know the following:
 
 > Biblical figures and the books in which they appear<br>
 > Places of significance in biblical history<br>
@@ -22,4 +20,5 @@ In future posts, I'll break down each of the sections above and how I'm studying
 
 1. [Canonical order of the biblical books](/seminary/bible-books-quiz)
 
-[^1]: The study guide is only available to Calvin Seminary students. To avoid plagiarism, I won't copy and paste anything beyond what the exam is testing you on.
+[^1]: If you pass an exam, you can earn credit for a course without having to take it.
+[^2]: The study guide is only available to Calvin Seminary students. To avoid plagiarism, I won't copy and paste anything beyond what the exam is testing you on.
