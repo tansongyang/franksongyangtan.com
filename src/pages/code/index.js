@@ -22,16 +22,6 @@ const SIDE_PROJECTS = [
     description:
       'A little tool that I built years ago when I was first learning JavaScript and trying to understand prototype chains.',
   },
-  {
-    title: 'Interactive Pokémon Type Chart',
-    link: 'https://codepen.io/tansongyang/full/BZLbGN',
-    description: (
-      <>
-        My first toy project when I was trying to learn{' '}
-        <Link to="https://vuejs.org/">Vue.js</Link>.
-      </>
-    ),
-  },
 ]
 
 export default function CodeIndexPage() {
