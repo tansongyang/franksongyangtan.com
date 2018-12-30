@@ -38,7 +38,7 @@ export default function CodeIndexPage() {
   return (
     <Layout>
       <Helmet title="Code" />
-      <h1>Code</h1>
+      <h1 class="screen-reader-only">Code</h1>
       <p>
         I'm a front-end software engineer with .NET experience. By day, I work
         with <Link to="https://www.emberjs.com/">Ember.js</Link> and{' '}

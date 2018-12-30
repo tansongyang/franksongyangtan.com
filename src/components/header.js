@@ -12,7 +12,7 @@ const LINKS = [
 
 const CONTEXTUAL_LINKS = [
   {
-    pathnamePrefix: '/seminary/',
+    pathnamePrefix: '/seminary',
     text: 'About this blog',
     to: '/seminary/about',
   },
@@ -29,11 +29,11 @@ const Header = ({ siteTitle }) => (
         <>
           <header className={styles.header}>
             <div className={styles.innerHeader}>
-              <h1 className={styles.heading}>
+              <div className={styles.heading}>
                 <Link to="/" className={styles.link}>
                   {siteTitle}
                 </Link>
-              </h1>
+              </div>
               <nav className={styles.nav}>
                 <ul className={styles.navList}>
                   {LINKS.map(link => (

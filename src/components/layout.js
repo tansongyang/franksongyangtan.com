@@ -32,7 +32,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
+        <main
           style={{
             margin: '0 auto',
             maxWidth: 960,
@@ -41,7 +41,7 @@ const Layout = ({ children }) => (
           }}
         >
           {children}
-        </div>
+        </main>
       </>
     )}
   />

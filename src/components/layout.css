@@ -265,7 +265,7 @@ h1 {
   font-family: headingFont;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.875rem;
+  font-size: 1.62671rem;
   line-height: 1.1;
 }
 h2 {
@@ -281,7 +281,7 @@ h2 {
   font-family: headingFont;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  font-size: 1.38316rem;
   line-height: 1.1;
 }
 h3 {
@@ -297,7 +297,7 @@ h3 {
   font-family: headingFont;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
+  font-size: 1.2rem;
   line-height: 1.1;
 }
 h4 {
@@ -658,6 +658,14 @@ input[type='text'] {
 input[type='text']:focus {
   outline: none;
   border-color: linkBlue;
+}
+.screen-reader-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 @media only screen and (max-width: maxMobileWidth) {
   html {
