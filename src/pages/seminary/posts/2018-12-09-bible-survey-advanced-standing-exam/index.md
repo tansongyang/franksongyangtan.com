@@ -2,12 +2,12 @@
 path: '/seminary/bible-survey-advanced-standing-exam'
 category: 'seminary'
 title: 'Bible Survey: The Advanced Standing Exam'
-description: "What's required to pass the Advanced Standing exam for Bible Survey?"
+description: "What's required to pass the Advanced Standing Exam for Bible Survey?"
 date: '2018-12-09'
 ---
 
-If you pass an Advanced Standing Exam, you can earn credit for a course without having to take it.
-My first seminary goal is passing the exam for Bible Survey.
+My first seminary goal is passing the Advanced Standing Exam for Bible Survey.
+If you pass an exam, you can earn credit for a course without having to take it.
 
 The study guide[^1] for the exam states that you need to know the following:
 
