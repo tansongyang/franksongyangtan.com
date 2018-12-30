@@ -1,10 +1,10 @@
-@value accentColor, interactive, interactiveLetterSpacing, maxMobileWidth, maxWidth, menuFont, offWhite from './layout.css';
+@value accentColor, interactive, interactiveLetterSpacing, marginBottom, maxMobileWidth, maxWidth, menuFont, offWhite from './layout.css';
 
 @value boxShadow: 0px 2px 16px 2px rgba(0, 0, 0, 0.2);
 
 .header {
   background: accentColor;
-  margin-bottom: 1.45rem;
+  margin-bottom: marginBottom;
   box-shadow: boxShadow;
 }
 
@@ -30,13 +30,14 @@
 
 .link {
   composes: interactive;
+  display: inline-block;
+  border-bottom: 2px solid accentColor;
 }
 
 .activeLink {
   composes: link;
   position: relative;
-  display: inline-block;
-  border-bottom: 2px solid;
+  border-color: offWhite;
 }
 
 /*
@@ -70,10 +71,4 @@ We add a box matching the background color to hide the extra border.
   margin-right: 1rem;
   margin-bottom: 0;
   font-size: 0.75rem;
-}
-
-.contextualLinks {
-  max-width: maxWidth;
-  margin: -0.5rem auto 1rem;
-  padding: 0 1rem;
 }

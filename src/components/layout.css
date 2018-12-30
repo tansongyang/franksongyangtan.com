@@ -16,6 +16,8 @@
 @value maxMobileWidth: 480px;
 @value maxWidth: 960px;
 
+@value marginBottom: 1.45rem;
+
 @value interactiveLetterSpacing: 0.25rem;
 .interactive {
   background: accentColor;

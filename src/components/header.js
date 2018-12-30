@@ -10,56 +10,38 @@ const LINKS = [
   { text: 'Seminary', to: '/seminary' },
 ]
 
-const CONTEXTUAL_LINKS = [
-  {
-    pathnamePrefix: '/seminary',
-    text: 'About this blog',
-    to: '/seminary/about',
-  },
-]
-
 const Header = ({ siteTitle }) => (
   <Location>
     {({ location }) => {
       const { pathname } = location
-      const contextualLink = CONTEXTUAL_LINKS.find(
-        link => pathname.startsWith(link.pathnamePrefix) && pathname !== link.to
-      )
       return (
-        <>
-          <header className={styles.header}>
-            <div className={styles.innerHeader}>
-              <div className={styles.heading}>
-                <Link to="/" className={styles.link}>
-                  {siteTitle}
-                </Link>
-              </div>
-              <nav className={styles.nav}>
-                <ul className={styles.navList}>
-                  {LINKS.map(link => (
-                    <li key={link.to} className={styles.navListItem}>
-                      <Link
-                        to={link.to}
-                        className={
-                          pathname.startsWith(link.to)
-                            ? styles.activeLink
-                            : styles.link
-                        }
-                      >
-                        {link.text}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
+        <header className={styles.header}>
+          <div className={styles.innerHeader}>
+            <div className={styles.heading}>
+              <Link to="/" className={styles.link}>
+                {siteTitle}
+              </Link>
             </div>
-          </header>
-          {contextualLink && (
-            <div className={styles.contextualLinks}>
-              <Link to={contextualLink.to}>{contextualLink.text}</Link>
-            </div>
-          )}
-        </>
+            <nav className={styles.nav}>
+              <ul className={styles.navList}>
+                {LINKS.map(link => (
+                  <li key={link.to} className={styles.navListItem}>
+                    <Link
+                      to={link.to}
+                      className={
+                        pathname.startsWith(link.to)
+                          ? styles.activeLink
+                          : styles.link
+                      }
+                    >
+                      {link.text}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+        </header>
       )
     }}
   </Location>
