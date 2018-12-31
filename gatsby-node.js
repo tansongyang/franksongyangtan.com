@@ -21,6 +21,7 @@ exports.createPages = ({ actions, graphql }) => {
           node {
             frontmatter {
               path
+              title
             }
           }
         }
@@ -31,10 +32,17 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const posts = result.data.allMarkdownRemark.edges
+    posts.forEach(({ node }, i) => {
+      const next = i === 0 ? null : posts[i - 1].node
+      const prev = i === posts.length - 1 ? null : posts[i + 1].node
       createPage({
         path: node.frontmatter.path,
         component: blogPostTemplate,
+        context: {
+          next,
+          prev,
+        },
       })
     })
   })

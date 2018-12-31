@@ -1,0 +1,60 @@
+@value grayish, maxMobileWidth from '../components/layout.css';
+
+.nav {
+  display: flex;
+}
+@media screen and (max-width: maxMobileWidth) {
+  .nav {
+    flex-direction: column;
+  }
+}
+
+.navItem {
+  flex: 0 0 33.3%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: maxMobileWidth) {
+  .navItem {
+    flex: auto;
+  }
+}
+
+.prev {
+  composes: navItem;
+  align-items: flex-start;
+}
+@media screen and (max-width: maxMobileWidth) {
+  .prev {
+    align-items: center;
+    order: 2;
+  }
+}
+
+.all {
+  composes: navItem;
+  align-items: center;
+  text-transform: capitalize;
+}
+@media screen and (max-width: maxMobileWidth) {
+  .all {
+    order: 1;
+  }
+}
+
+.next {
+  composes: navItem;
+  align-items: flex-end;
+}
+@media screen and (max-width: maxMobileWidth) {
+  .next {
+    align-items: center;
+    order: 3;
+  }
+}
+
+.navHeading {
+  margin-bottom: 0.5rem;
+  color: grayish;
+  font-size: 1rem;
+}

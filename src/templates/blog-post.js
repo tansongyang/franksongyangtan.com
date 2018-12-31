@@ -5,9 +5,13 @@ import { graphql } from 'gatsby'
 import Entry from '../components/entry'
 import HtmlAstRenderer from '../components/htmlAstRenderer'
 import Layout from '../components/layout'
+import Link from '../components/link'
 
-export default function Template({ data }) {
+import styles from './blog-post.module.css'
+
+export default function Template({ data, pageContext }) {
   const { markdownRemark: post } = data
+  const { prev, next } = pageContext
   return (
     <Layout>
       <Helmet title={post.frontmatter.title} />
@@ -17,6 +21,41 @@ export default function Template({ data }) {
           title={post.frontmatter.title}
         />
         <HtmlAstRenderer htmlAst={post.htmlAst} />
+        <hr />
+        <div className={styles.nav}>
+          <div className={styles.prev}>
+            {prev && (
+              <>
+                <h2 className={styles.navHeading}>Previous</h2>
+                <p>
+                  <Link to={prev.frontmatter.path}>
+                    <span aria-hidden="true">←</span> {prev.frontmatter.title}
+                  </Link>
+                </p>
+              </>
+            )}
+          </div>
+          <div className={styles.all}>
+            <h2 className={styles.navHeading}>All Posts</h2>
+            <p>
+              <Link to={`/${post.frontmatter.category}`}>
+                {post.frontmatter.category}
+              </Link>
+            </p>
+          </div>
+          <div className={styles.next}>
+            {next && (
+              <>
+                <h2 className={styles.navHeading}>Next</h2>
+                <p>
+                  <Link to={next.frontmatter.path}>
+                    {next.frontmatter.title} <span aria-hidden="true">→</span>
+                  </Link>
+                </p>
+              </>
+            )}
+          </div>
+        </div>
       </article>
     </Layout>
   )
@@ -27,8 +66,9 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       htmlAst
       frontmatter {
-        title
+        category
         date
+        title
       }
     }
   }
