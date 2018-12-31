@@ -12,13 +12,15 @@ const Entry = ({ children, hTag, timestamp, title, titleLink }) => {
   const titleContent = titleLink ? <Link to={titleLink}>{title}</Link> : title
   return (
     <>
-      <Tag className={styles.title}>{titleContent}</Tag>
-      {timestamp && (
-        <time className={styles.timestamp} dateTime={timestamp}>
-          {format(timestamp, DATE)}
-        </time>
-      )}
-      <p>{children}</p>
+      <header>
+        <Tag className={styles.title}>{titleContent}</Tag>
+        {timestamp && (
+          <time className={styles.timestamp} dateTime={timestamp}>
+            {format(timestamp, DATE)}
+          </time>
+        )}
+      </header>
+      {children && <p>{children}</p>}
     </>
   )
 }
