@@ -21,12 +21,20 @@ type State = {
   isSubmitted: boolean
 }
 
+type LocalStorageState = {
+  answers: string[]
+}
+
 function defaultState(props: Props): State {
   return {
     answers: props.questions.map(() => ''),
     isActive: false,
     isSubmitted: false,
   }
+}
+
+function localStorageKey(name: string): string {
+  return `quiz_${name}`
 }
 
 export default class Quiz extends React.Component<Props, State> {
@@ -40,6 +48,11 @@ export default class Quiz extends React.Component<Props, State> {
     this.recordAnswer = this.recordAnswer.bind(this)
     this.startOver = this.startOver.bind(this)
     this.submit = this.submit.bind(this)
+  }
+
+  componentDidMount() {
+    const state = this.restore(this.props.name)
+    this.setState({ answers: state.answers })
   }
 
   open() {
@@ -58,6 +71,16 @@ export default class Quiz extends React.Component<Props, State> {
     const answers = [...this.state.answers]
     answers[index] = event.target.value
     this.setState({ answers })
+    this.save(this.props.name, { answers })
+  }
+
+  restore(name: string): LocalStorageState {
+    const state = window.localStorage.getItem(localStorageKey(name))
+    return state ? JSON.parse(state) : { answers: [] }
+  }
+
+  save(name: string, state: LocalStorageState) {
+    window.localStorage.setItem(localStorageKey(name), JSON.stringify(state))
   }
 
   startOver() {
