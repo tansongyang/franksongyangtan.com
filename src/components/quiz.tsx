@@ -38,6 +38,7 @@ export default class Quiz extends React.Component<Props, State> {
     this.open = this.open.bind(this)
     this.close = this.close.bind(this)
     this.recordAnswer = this.recordAnswer.bind(this)
+    this.startOver = this.startOver.bind(this)
     this.submit = this.submit.bind(this)
   }
 
@@ -57,6 +58,10 @@ export default class Quiz extends React.Component<Props, State> {
     const answers = [...this.state.answers]
     answers[index] = event.target.value
     this.setState({ answers })
+  }
+
+  startOver() {
+    this.setState({ ...defaultState(this.props), isActive: true })
   }
 
   submit() {
@@ -129,7 +134,12 @@ export default class Quiz extends React.Component<Props, State> {
         </Modal>
         <Modal
           contentLabel={props.name}
-          footer={<Button onClick={this.submit}>Submit</Button>}
+          footer={
+            <>
+              <Button onClick={this.submit}>Submit</Button>
+              <Button onClick={this.startOver}>Start Over</Button>
+            </>
+          }
           isOpen={state.isActive}
           onRequestClose={this.close}
         >

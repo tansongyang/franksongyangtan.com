@@ -71,3 +71,9 @@
   box-shadow: 0 -1px footerShadow, 0 -2px footerShadow, 0 -3px footerShadow,
     0 -4px footerShadow;
 }
+.footerRow * {
+  margin-right: 1rem;
+}
+.footerRow *:last-child {
+  margin-right: 0;
+}
