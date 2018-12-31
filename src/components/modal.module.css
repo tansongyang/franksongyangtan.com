@@ -1,5 +1,8 @@
-@value interactive, maxMobileWidth, maxWidth, offWhite from './layout.css';
-@value boxShadow from './header.module.css';
+@value grayish, interactive, maxMobileWidth, maxWidth, offWhite, shadowColor from './layout.css';
+@value boxShadow as headerShadow from './header.module.css';
+
+@value boxShadow: 0 0 16px 2px shadowColor;
+@value footerShadow: rgba(0, 0, 0, 0.025);
 
 @value footerHeight: 4rem;
 @value headerHeight: 3rem;
@@ -16,6 +19,7 @@
   width: calc(maxWidth * 3 / 4);
   max-width: 80%;
   max-height: 80%;
+  box-shadow: boxShadow;
 }
 
 @media screen and (max-width: maxMobileWidth) {
@@ -34,7 +38,7 @@
   justify-content: space-between;
   align-items: flex-start;
   height: headerHeight;
-  box-shadow: boxShadow;
+  box-shadow: headerShadow;
 }
 
 .heading {
@@ -65,5 +69,6 @@
   align-items: center;
   height: footerHeight;
   background: #f0f0f0;
-  box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -1px footerShadow, 0 -2px footerShadow, 0 -3px footerShadow,
+    0 -4px footerShadow;
 }

@@ -11,6 +11,7 @@
 @value negativeRed: #d33527;
 @value offWhite: #f8f8f8;
 @value positiveGreen: #0d8249;
+@value shadowColor: rgba(0, 0, 0, 0.2);
 @value textColor: hsla(0, 0%, 0%, 0.8);
 
 @value maxMobileWidth: 480px;

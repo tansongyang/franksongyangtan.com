@@ -1,6 +1,6 @@
-@value accentColor, interactive, interactiveLetterSpacing, marginBottom, maxMobileWidth, maxWidth, menuFont, offWhite from './layout.css';
+@value accentColor, interactive, interactiveLetterSpacing, marginBottom, maxMobileWidth, maxWidth, menuFont, offWhite, shadowColor from './layout.css';
 
-@value boxShadow: 0px 2px 16px 2px rgba(0, 0, 0, 0.2);
+@value boxShadow: 0px 2px 16px 2px shadowColor;
 
 .header {
   background: accentColor;
