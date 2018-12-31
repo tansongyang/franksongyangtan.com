@@ -7,6 +7,7 @@ const styles = require('./modal.module.css')
 
 export type Props = Exclude<ReactModal.Props, 'style'> & {
   children: React.ReactChild | React.ReactChild[]
+  childrenRef?: (ref: HTMLElement) => void
   footer: React.ReactChild | React.ReactChild[]
 }
 
@@ -24,7 +25,9 @@ export default function Modal(props: Props) {
           🗙
         </Button>
       </div>
-      <div className={styles.children}>{props.children}</div>
+      <div className={styles.children} ref={props.childrenRef}>
+        {props.children}
+      </div>
       <div className={styles.footerRow}>{props.footer}</div>
     </ReactModal>
   )

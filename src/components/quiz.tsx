@@ -58,6 +58,8 @@ function getResponses(questions: Question[], answers: string[]) {
 }
 
 export default class Quiz extends React.Component<Props, State> {
+  questionsRef?: HTMLElement
+
   constructor(props: Props) {
     super(props)
 
@@ -104,7 +106,11 @@ export default class Quiz extends React.Component<Props, State> {
   }
 
   startOver() {
-    this.setState({ ...defaultState(this.props), isActive: true })
+    const { props } = this
+    this.save(props.name, { answers: [] })
+    this.setState({ ...defaultState(props), isActive: true }, () => {
+      this.questionsRef.scrollTop = 0
+    })
   }
 
   submit() {
@@ -159,6 +165,7 @@ export default class Quiz extends React.Component<Props, State> {
         </Modal>
         <Modal
           contentLabel={props.name}
+          childrenRef={r => (this.questionsRef = r)}
           footer={
             <>
               <Button onClick={this.submit}>Submit</Button>
