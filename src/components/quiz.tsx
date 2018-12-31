@@ -37,14 +37,34 @@ function localStorageKey(name: string): string {
   return `quiz_${name}`
 }
 
+function getResponses(questions: Question[], answers: string[]) {
+  return answers.map((answer, i) => {
+    const { q: question, a: correctAnswer } = questions[i]
+    return {
+      answer,
+      correctAnswer:
+        typeof correctAnswer === 'string'
+          ? correctAnswer
+          : correctAnswer.join(', '),
+      isCorrect:
+        typeof correctAnswer === 'string'
+          ? answer.trim().toLowerCase() === correctAnswer.toLowerCase()
+          : correctAnswer
+              .map(a => a.toLowerCase())
+              .includes(answer.trim().toLowerCase()),
+      question,
+    }
+  })
+}
+
 export default class Quiz extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props)
 
     this.state = defaultState(props)
 
-    this.open = this.open.bind(this)
     this.close = this.close.bind(this)
+    this.open = this.open.bind(this)
     this.recordAnswer = this.recordAnswer.bind(this)
     this.startOver = this.startOver.bind(this)
     this.submit = this.submit.bind(this)
@@ -55,16 +75,16 @@ export default class Quiz extends React.Component<Props, State> {
     this.setState({ answers: state.answers })
   }
 
-  open() {
-    this.setState({ isActive: true, isSubmitted: false })
-  }
-
   close() {
     if (this.state.isSubmitted) {
       this.setState(defaultState(this.props))
     } else {
       this.setState({ isActive: false })
     }
+  }
+
+  open() {
+    this.setState({ isActive: true, isSubmitted: false })
   }
 
   recordAnswer(index: number, event: React.ChangeEvent<HTMLInputElement>) {
@@ -91,30 +111,12 @@ export default class Quiz extends React.Component<Props, State> {
     this.setState({ isActive: false, isSubmitted: true })
   }
 
-  responses() {
-    return this.state.answers.map((answer, i) => {
-      const { q: question, a: correctAnswer } = this.props.questions[i]
-      return {
-        answer,
-        correctAnswer:
-          typeof correctAnswer === 'string'
-            ? correctAnswer
-            : correctAnswer.join(', '),
-        isCorrect:
-          typeof correctAnswer === 'string'
-            ? answer.trim().toLowerCase() === correctAnswer.toLowerCase()
-            : correctAnswer
-                .map(a => a.toLowerCase())
-                .includes(answer.trim().toLowerCase()),
-        question,
-      }
-    })
-  }
-
   render() {
     const { props, state } = this
     const isInProgress = state.answers.some(a => !!a)
-    const responses = state.isSubmitted ? this.responses() : []
+    const responses = state.isSubmitted
+      ? getResponses(this.props.questions, this.state.answers)
+      : []
     const correctResponses = state.isSubmitted
       ? responses.filter(r => r.isCorrect)
       : []
