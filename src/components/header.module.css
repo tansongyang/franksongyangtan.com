@@ -7,7 +7,6 @@
   margin-bottom: marginBottom;
   box-shadow: boxShadow;
 }
-
 @media screen and (max-width: maxMobileWidth) {
   .header {
     text-align: center;
@@ -39,7 +38,6 @@
   position: relative;
   border-color: offWhite;
 }
-
 /*
 The `letter-spacing` from `interactive` leaves space after the last letter.
 When you add a bottom border, the border goes too far past the end of the word.
@@ -60,7 +58,6 @@ We add a box matching the background color to hide the extra border.
   margin: 0;
   padding-bottom: 0.5rem;
 }
-
 @media screen and (max-width: maxMobileWidth) {
   .navList {
     justify-content: center;

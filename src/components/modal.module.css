@@ -21,7 +21,6 @@
   max-height: 80%;
   box-shadow: boxShadow;
 }
-
 @media screen and (max-width: maxMobileWidth) {
   .modal {
     width: 80%;
