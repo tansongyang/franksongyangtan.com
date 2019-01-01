@@ -25,9 +25,13 @@ type LocalStorageState = {
   answers: string[]
 }
 
+function defaultAnswers(props: Props) {
+  return props.questions.map(() => '')
+}
+
 function defaultState(props: Props): State {
   return {
-    answers: props.questions.map(() => ''),
+    answers: defaultAnswers(props),
     isActive: false,
     isSubmitted: false,
   }
@@ -73,7 +77,7 @@ export default class Quiz extends React.Component<Props, State> {
   }
 
   componentDidMount() {
-    const state = this.restore(this.props.name)
+    const state = this.restore()
     this.setState({ answers: state.answers })
   }
 
@@ -92,23 +96,26 @@ export default class Quiz extends React.Component<Props, State> {
   recordAnswer(index: number, event: React.ChangeEvent<HTMLInputElement>) {
     const answers = [...this.state.answers]
     answers[index] = event.target.value
-    this.setState({ answers })
-    this.save(this.props.name, { answers })
+    const state = { answers }
+    this.setState(state)
+    this.save(state)
   }
 
-  restore(name: string): LocalStorageState {
-    const state = window.localStorage.getItem(localStorageKey(name))
-    return state ? JSON.parse(state) : { answers: [] }
+  restore(): LocalStorageState {
+    const state = window.localStorage.getItem(localStorageKey(this.props.name))
+    return state ? JSON.parse(state) : { answers: defaultAnswers(this.props) }
   }
 
-  save(name: string, state: LocalStorageState) {
-    window.localStorage.setItem(localStorageKey(name), JSON.stringify(state))
+  save(state: LocalStorageState) {
+    window.localStorage.setItem(
+      localStorageKey(this.props.name),
+      JSON.stringify(state)
+    )
   }
 
   startOver() {
-    const { props } = this
-    this.save(props.name, { answers: [] })
-    this.setState({ ...defaultState(props), isActive: true }, () => {
+    this.save({ answers: defaultAnswers(this.props) })
+    this.setState({ ...defaultState(this.props), isActive: true }, () => {
       this.questionsRef.scrollTop = 0
     })
   }
