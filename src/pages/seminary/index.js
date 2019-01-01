@@ -17,15 +17,14 @@ export default function SeminaryIndexPage({ data }) {
       </p>
       {edges.map(({ node: post }) => {
         return (
-          <article key={post.frontmatter.path}>
-            <Entry
-              timestamp={post.frontmatter.date}
-              title={post.frontmatter.title}
-              titleLink={post.frontmatter.path}
-            >
-              {post.frontmatter.description}
-            </Entry>
-          </article>
+          <Entry
+            key={post.frontmatter.path}
+            timestamp={post.frontmatter.date}
+            title={post.frontmatter.title}
+            titleLink={post.frontmatter.path}
+          >
+            <p>{post.frontmatter.description}</p>
+          </Entry>
         )
       })}
     </Layout>

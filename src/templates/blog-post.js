@@ -15,11 +15,7 @@ export default function Template({ data, pageContext }) {
   return (
     <Layout>
       <Helmet title={post.frontmatter.title} />
-      <article>
-        <Entry
-          timestamp={post.frontmatter.date}
-          title={post.frontmatter.title}
-        />
+      <Entry timestamp={post.frontmatter.date} title={post.frontmatter.title}>
         <HtmlAstRenderer htmlAst={post.htmlAst} />
         <hr />
         <div className={styles.nav}>
@@ -56,7 +52,7 @@ export default function Template({ data, pageContext }) {
             )}
           </div>
         </div>
-      </article>
+      </Entry>
     </Layout>
   )
 }

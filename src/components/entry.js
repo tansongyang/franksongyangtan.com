@@ -11,7 +11,7 @@ const Entry = ({ children, hTag, timestamp, title, titleLink }) => {
   const Tag = hTag || 'h1'
   const titleContent = titleLink ? <Link to={titleLink}>{title}</Link> : title
   return (
-    <>
+    <article>
       <header>
         <Tag className={styles.title}>{titleContent}</Tag>
         {timestamp && (
@@ -20,8 +20,8 @@ const Entry = ({ children, hTag, timestamp, title, titleLink }) => {
           </time>
         )}
       </header>
-      {children && <p>{children}</p>}
-    </>
+      {children}
+    </article>
   )
 }
 
