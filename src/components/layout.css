@@ -200,6 +200,16 @@ legend {
 textarea {
   overflow: auto;
 }
+[type='text'] {
+  border: 2px solid accentColor;
+  border-radius: 4px;
+  padding: 0.5rem;
+  background: offWhite;
+}
+[type='text']:focus {
+  outline: none;
+  border-color: linkBlue;
+}
 [type='checkbox'],
 [type='radio'] {
   box-sizing: border-box;
@@ -658,16 +668,7 @@ pre tt:before,
 pre tt:after {
   content: '';
 }
-input[type='text'] {
-  border: 2px solid accentColor;
-  border-radius: 4px;
-  padding: 0.5rem;
-  background: offWhite;
-}
-input[type='text']:focus {
-  outline: none;
-  border-color: linkBlue;
-}
+
 .screen-reader-only {
   position: absolute;
   left: -10000px;
@@ -675,9 +676,4 @@ input[type='text']:focus {
   width: 1px;
   height: 1px;
   overflow: hidden;
-}
-@media only screen and (max-width: maxMobileWidth) {
-  html {
-    font-size: 100%;
-  }
 }
