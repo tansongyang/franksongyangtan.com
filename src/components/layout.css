@@ -15,7 +15,7 @@
 @value textColor: hsla(0, 0%, 0%, 0.8);
 
 @value maxMobileWidth: 480px;
-@value maxWidth: 960px;
+@value maxWidth: 40rem;
 
 @value marginBottom: 1.45rem;
 
