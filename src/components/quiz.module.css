@@ -1,4 +1,11 @@
-@value negativeRed, positiveGreen from './layout.css';
+@value maxMobileWidth, negativeRed, positiveGreen from './layout.css';
+
+@media screen and (max-width: maxMobileWidth) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .quizName {
   margin: 0;

@@ -135,7 +135,7 @@ export default class Quiz extends React.Component<Props, State> {
       : []
     const isPerfect = correctResponses.length === responses.length
     return (
-      <>
+      <span className={styles.container}>
         <Button onClick={this.open}>
           {isInProgress ? 'Continue Quiz' : 'Start Quiz'}
         </Button>
@@ -200,7 +200,7 @@ export default class Quiz extends React.Component<Props, State> {
             ))}
           </ol>
         </Modal>
-      </>
+      </span>
     )
   }
 }
