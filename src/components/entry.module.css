@@ -1,12 +1,18 @@
-@value layout: './layout.css';
-@value grayish from layout;
+@value grayish, marginBottom, textColor from './layout.css';
 
 .title {
   margin-bottom: 0.5rem;
 }
+.title:last-child {
+  margin-bottom: marginBottom;
+}
+
+.titleLink {
+  color: textColor;
+}
 
 .timestamp {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: marginBottom;
   color: grayish;
 }

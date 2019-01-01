@@ -9,7 +9,13 @@ import { DATE } from '../utils/formats'
 
 const Entry = ({ children, hTag, timestamp, title, titleLink }) => {
   const Tag = hTag || 'h1'
-  const titleContent = titleLink ? <Link to={titleLink}>{title}</Link> : title
+  const titleContent = titleLink ? (
+    <Link className={styles.titleLink} to={titleLink}>
+      {title}
+    </Link>
+  ) : (
+    title
+  )
   return (
     <article>
       <header>

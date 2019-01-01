@@ -11,8 +11,13 @@ const SIDE_PROJECTS = [
     link: 'https://codepen.io/tansongyang/full/XgXbrR',
     description: (
       <>
-        An audiovisual experiment built with{' '}
-        <Link to="https://cycle.js.org/">Cycle.js</Link>.
+        An audiovisual experiment I built because I wanted to play with{' '}
+        <Link to="https://cycle.js.org/">Cycle.js</Link> and the HTML5 Canvas
+        API. The music comes from the{' '}
+        <Link to="https://www.britannica.com/topic/Chaconne-by-Bach">
+          Chaconne
+        </Link>{' '}
+        by Johann Sebastian Bach.
       </>
     ),
   },
@@ -53,6 +58,9 @@ export default function CodeIndexPage() {
           titleLink={project.link}
         >
           <p>{project.description}</p>
+          <p>
+            <Link to={project.link}>Live&nbsp;demo</Link>
+          </p>
         </Entry>
       ))}
     </Layout>

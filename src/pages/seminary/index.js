@@ -24,6 +24,9 @@ export default function SeminaryIndexPage({ data }) {
             titleLink={post.frontmatter.path}
           >
             <p>{post.frontmatter.description}</p>
+            <p>
+              <Link to={post.frontmatter.path}>Read more.</Link>
+            </p>
           </Entry>
         )
       })}
