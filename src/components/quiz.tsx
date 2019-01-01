@@ -176,7 +176,7 @@ export default class Quiz extends React.Component<Props, State> {
           footer={
             <>
               <Button onClick={this.submit}>Submit</Button>
-              <Button onClick={this.startOver}>Start Over</Button>
+              <Button onClick={this.startOver}>Restart</Button>
             </>
           }
           isOpen={state.isActive}
