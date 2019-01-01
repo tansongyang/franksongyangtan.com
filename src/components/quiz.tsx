@@ -159,10 +159,18 @@ export default class Quiz extends React.Component<Props, State> {
                     <p className={styles.correct}>{r.answer}</p>
                   ) : (
                     <>
-                      <p className={styles.incorrect}>
-                        {r.answer || '(blank)'}
+                      <p>
+                        You wrote:{' '}
+                        <span className={styles.incorrect}>
+                          {r.answer || '(blank)'}
+                        </span>
                       </p>
-                      <p className={styles.correct}>{r.correctAnswer}</p>
+                      <p>
+                        Correct answer(s):{' '}
+                        <span className={styles.correct}>
+                          {r.correctAnswer}
+                        </span>
+                      </p>
                     </>
                   )}
                 </li>
