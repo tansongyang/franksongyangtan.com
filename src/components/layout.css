@@ -52,6 +52,12 @@ section,
 summary {
   display: block;
 }
+main {
+  margin: 0 auto;
+  max-width: maxWidth;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+}
 audio,
 canvas,
 progress,
