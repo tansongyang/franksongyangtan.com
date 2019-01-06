@@ -4,6 +4,7 @@ category: 'seminary'
 title: 'Bible Survey: The Advanced Standing Exam'
 description: "What's required to pass the Advanced Standing Exam for Bible Survey?"
 date: '2018-12-09'
+tags: 'advanced-standing-exam,bible-survey'
 ---
 
 My first seminary goal is passing the Advanced Standing Exam[^1] for Bible Survey.

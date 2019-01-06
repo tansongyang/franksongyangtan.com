@@ -4,6 +4,7 @@ category: 'seminary'
 title: 'The Bible Books Quiz'
 description: 'A quiz on the books of the Bible.'
 date: '2018-12-11'
+tags: 'advanced-standing-exam,bible-survey,quiz'
 ---
 
 This is a little quiz on the order of books in the Protestant Bible.
