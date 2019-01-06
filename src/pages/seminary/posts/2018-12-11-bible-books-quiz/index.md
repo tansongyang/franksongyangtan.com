@@ -6,7 +6,7 @@ description: 'A quiz on the books of the Bible.'
 date: '2018-12-11'
 ---
 
-This is a little quiz on the **canonical order of the biblical books**.
+This is a little quiz on the order of books in the Protestant Bible.
 
 <x-quiz
     name="Bible Books Quiz"
