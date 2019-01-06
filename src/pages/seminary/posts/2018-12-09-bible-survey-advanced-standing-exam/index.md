@@ -7,18 +7,13 @@ date: '2018-12-09'
 ---
 
 My first seminary goal is passing the Advanced Standing Exam[^1] for Bible Survey.
-The study guide[^2] for the exam states that you need to know the following:
+In future posts, I'll break down how I'm studying for each section of the exam:
 
-> Biblical figures and the books in which they appear<br>
-> Places of significance in biblical history<br>
-> Dates of significance in biblical history<br>
-> Themes of the biblical books<br>
-> Biblical verses from memory<br>
-> Canonical order of the biblical books
-
-In future posts, I'll break down each of the sections above and how I'm studying for them.
-
-1. [Canonical order of the biblical books](/seminary/bible-books-quiz)
+- Biblical figures and the books in which they appear
+- Places of significance in biblical history
+- Dates of significance in biblical history
+- Themes of the biblical books
+- Biblical verses from memory
+- [Canonical order of the biblical books](/seminary/bible-books-quiz)
 
 [^1]: If you pass an exam, you can earn credit for a course without having to take it.
-[^2]: The study guide is only available to Calvin Seminary students. To avoid plagiarism, I won't copy and paste anything beyond what the exam is testing you on.
