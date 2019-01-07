@@ -8,8 +8,8 @@ const Link = ({ to: link, children, className }) => {
     <a
       className={className}
       href={link}
-      target="_blank"
       rel="noopener noreferrer"
+      target="_blank"
     >
       {children}
     </a>
