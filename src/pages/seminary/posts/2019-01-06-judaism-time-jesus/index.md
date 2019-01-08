@@ -46,7 +46,7 @@ I plan to cover the highlights in future posts.
 
 <x-sources>
 
-- <cite>VanderKam, pp. 1-10</cite>
+- <cite>VanderKam, pp. 1-11</cite>
 - <x-link to="https://www.jewishvirtuallibrary.org/the-babylonian-exile">The Babylonian Exile</x-link>
 - <x-link to="https://www.jewishvirtuallibrary.org/timeline-of-judaism-after-the-babylonian-exile-538-bce-70-ce">Timeline of Judaism after the Babylonian Exile (538 BCE-70 CE)</x-link>
 - Construction of the first temple: <x-link to="https://www.bible.com/bible/100/1KI.6.NASB">1 Kings 6</x-link>
