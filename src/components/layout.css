@@ -52,6 +52,10 @@ section,
 summary {
   display: block;
 }
+details,
+summary {
+  margin-bottom: marginBottom;
+}
 main {
   margin: 0 auto;
   max-width: maxWidth;
