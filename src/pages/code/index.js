@@ -7,6 +7,15 @@ import Link from '../../components/link'
 
 const SIDE_PROJECTS = [
   {
+    title: 'This site',
+    description: (
+      <>
+        The site you're on right now! You can read more about it{' '}
+        <Link to="/code/site">here</Link>.
+      </>
+    ),
+  },
+  {
     title: 'Musical Dots',
     link: 'https://codepen.io/tansongyang/full/XgXbrR',
     description: (
@@ -52,15 +61,17 @@ export default function CodeIndexPage() {
       </p>
       {SIDE_PROJECTS.map(project => (
         <Entry
-          key={project.link}
+          key={project.title}
           hTag="h3"
           title={project.title}
           titleLink={project.link}
         >
           <p>{project.description}</p>
-          <p>
-            <Link to={project.link}>Live&nbsp;demo</Link>
-          </p>
+          {project.link && (
+            <p>
+              <Link to={project.link}>Live&nbsp;demo</Link>
+            </p>
+          )}
         </Entry>
       ))}
     </Layout>
