@@ -6,9 +6,9 @@ import Button, { Kind as ButtonKind } from './button'
 const styles = require('./modal.module.css')
 
 export type Props = Exclude<ReactModal.Props, 'style'> & {
-  children: React.ReactChild | React.ReactChild[]
+  children: React.ReactNode
   childrenRef?: (ref: HTMLElement) => void
-  footer: React.ReactChild | React.ReactChild[]
+  footer: React.ReactNode
 }
 
 export default function Modal(props: Props) {
