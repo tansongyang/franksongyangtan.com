@@ -1,14 +1,20 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 
+import Head from '../../../components/head'
 import Layout from '../../../components/layout'
 import Link from '../../../components/link'
+import { pageTitle } from '../../../utils/formats'
+
+const TITLE = 'About my seminary blog'
 
 export default function SeminaryAboutPage() {
   return (
     <Layout>
-      <Helmet title="Seminary: About" />
-      <h1>About my seminary blog</h1>
+      <Head
+        title={pageTitle(TITLE)}
+        description="Information about my seminary blog."
+      />
+      <h1>{TITLE}</h1>
       <p>
         I'm working on a Masters of Theological Studies online and part-time at{' '}
         <Link to="https://www.calvinseminary.edu/">Calvin Seminary</Link>. This

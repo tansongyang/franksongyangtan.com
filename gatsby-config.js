@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Frank Songyang Tan',
+    title: 'Frank Tan (tansongyang)',
   },
   plugins: [
     'gatsby-plugin-catch-links',

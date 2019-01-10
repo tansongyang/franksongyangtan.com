@@ -2,7 +2,7 @@
 path: '/seminary/judaism-time-jesus'
 category: 'seminary'
 title: 'Judaism in the Time of Jesus'
-description: 'Background for the New Testament.'
+description: 'What is the class about?'
 date: '2019-01-06'
 tags: 'judaism-time-jesus'
 ---

@@ -1,9 +1,10 @@
 {
   "name": "franksongyangtan.com",
-  "description": "Frank Songyang Tan's personal site",
+  "description": "Personal site of Frank Tan (tansongyang).",
   "version": "1.0.0",
   "author": "Frank Tan <tansongyang@gmail.com>",
   "dependencies": {
+    "@types/react-helmet": "^5.0.8",
     "@types/react-modal": "^3.6.0",
     "date-fns": "^1.29.0",
     "gatsby": "^2.0.53",

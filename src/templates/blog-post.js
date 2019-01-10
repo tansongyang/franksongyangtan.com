@@ -1,11 +1,12 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 
 import Entry from '../components/entry'
+import Head from '../components/head'
 import HtmlAstRenderer from '../components/htmlAstRenderer'
 import Layout from '../components/layout'
 import Link from '../components/link'
+import { pageTitle } from '../utils/formats'
 
 import styles from './blog-post.module.css'
 
@@ -14,14 +15,9 @@ export default function Template({ data, pageContext }) {
   const { prev, next } = pageContext
   return (
     <Layout>
-      <Helmet
-        title={post.frontmatter.title}
-        meta={[
-          {
-            name: 'description',
-            content: post.frontmatter.description,
-          },
-        ]}
+      <Head
+        title={pageTitle(post.frontmatter.title)}
+        description={post.frontmatter.description}
       />
       <Entry timestamp={post.frontmatter.date} title={post.frontmatter.title}>
         <HtmlAstRenderer htmlAst={post.htmlAst} />

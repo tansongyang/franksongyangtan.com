@@ -1,17 +1,23 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 
 import Entry from '../../components/entry'
+import Head from '../../components/head'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
+import { pageTitle } from '../../utils/formats'
+
+const TITLE = 'Seminary'
 
 export default function SeminaryIndexPage({ data }) {
   const { edges } = data.allMarkdownRemark
   return (
     <Layout>
-      <Helmet title="Seminary" />
-      <h1 className="screen-reader-only">Seminary</h1>
+      <Head
+        title={pageTitle(TITLE)}
+        description="Posts about seminary studies."
+      />
+      <h1>{TITLE}</h1>
       <p>
         <Link to="seminary/about">About this blog</Link>
       </p>

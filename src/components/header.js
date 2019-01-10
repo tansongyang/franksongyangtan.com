@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { Location } from '@reach/router'
 
@@ -10,7 +9,7 @@ const LINKS = [
   { text: 'Seminary', to: '/seminary' },
 ]
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <Location>
     {({ location }) => {
       const { pathname } = location
@@ -19,7 +18,7 @@ const Header = ({ siteTitle }) => (
           <div className={styles.innerHeader}>
             <div className={styles.heading}>
               <Link to="/" className={styles.link}>
-                {siteTitle}
+                Frank Songyang Tan
               </Link>
             </div>
             <nav className={styles.nav}>
@@ -46,13 +45,5 @@ const Header = ({ siteTitle }) => (
     }}
   </Location>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: '',
-}
 
 export default Header

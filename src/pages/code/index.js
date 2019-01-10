@@ -1,9 +1,10 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 
 import Entry from '../../components/entry'
+import Head from '../../components/head'
 import Layout from '../../components/layout'
 import Link from '../../components/link'
+import { pageTitle } from '../../utils/formats'
 
 const SIDE_PROJECTS = [
   {
@@ -38,11 +39,13 @@ const SIDE_PROJECTS = [
   },
 ]
 
+const TITLE = 'Code'
+
 export default function CodeIndexPage() {
   return (
     <Layout>
-      <Helmet title="Code" />
-      <h1 className="screen-reader-only">Code</h1>
+      <Head title={pageTitle(TITLE)} description="Code samples." />
+      <h1>{TITLE}</h1>
       <p>
         I'm a front-end software engineer with .NET experience. By day, I work
         with <Link to="https://www.emberjs.com/">Ember.js</Link> and{' '}

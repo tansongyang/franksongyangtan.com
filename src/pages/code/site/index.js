@@ -1,14 +1,20 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 
+import Head from '../../../components/head'
 import Layout from '../../../components/layout'
 import Link from '../../../components/link'
+import { pageTitle } from '../../../utils/formats'
+
+const TITLE = 'How I built this site'
 
 export default function CodeSitePage() {
   return (
     <Layout>
-      <Helmet title="Code: This Site" />
-      <h1>Technical details about this site</h1>
+      <Head
+        title={pageTitle(TITLE)}
+        description="Technical details about this site."
+      />
+      <h1>{TITLE}</h1>
       <p>
         In the winter of 2018, I decided to build a personal site. To help me
         choose between the available tools, I came up with the following
