@@ -14,7 +14,15 @@ export default function Template({ data, pageContext }) {
   const { prev, next } = pageContext
   return (
     <Layout>
-      <Helmet title={post.frontmatter.title} />
+      <Helmet
+        title={post.frontmatter.title}
+        meta={[
+          {
+            name: 'description',
+            content: post.frontmatter.description,
+          },
+        ]}
+      />
       <Entry timestamp={post.frontmatter.date} title={post.frontmatter.title}>
         <HtmlAstRenderer htmlAst={post.htmlAst} />
         <hr />
@@ -64,6 +72,7 @@ export const pageQuery = graphql`
       frontmatter {
         category
         date
+        description
         title
       }
     }
