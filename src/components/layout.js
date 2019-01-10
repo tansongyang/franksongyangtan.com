@@ -26,7 +26,6 @@ const Layout = ({ children }) => (
               name: 'description',
               content: "Frank Songyang Tan's personal site.",
             },
-            { name: 'keywords', content: 'frank, songyang, tan, tansongyang' },
           ]}
         >
           <html lang="en" />
