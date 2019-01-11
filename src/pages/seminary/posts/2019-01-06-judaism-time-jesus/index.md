@@ -9,9 +9,8 @@ tags: 'judaism-time-jesus'
 
 ## Introduction
 
-My first official class is the elective Judaism in the Time of Jesus:
-
-> A survey of Jewish history and literature in the second temple period as background for understanding the New Testament.
+My first class is the elective Judaism in the Time of Jesus.
+In this class, we study the second temple period as background for the New Testament.
 
 The textbook for this class is <cite><x-link to="https://www.amazon.com/Introduction-Early-Judaism-James-Vanderkam/dp/0802846416">An Introduction to Early Judaism</x-link></cite> by James C. VanderKam.
 In all posts related to this class, I will refer to this book as <cite>VanderKam</cite>.

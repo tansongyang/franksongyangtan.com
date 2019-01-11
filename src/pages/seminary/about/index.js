@@ -17,8 +17,10 @@ export default function SeminaryAboutPage() {
       <h1>{TITLE}</h1>
       <p>
         I'm working on a Masters of Theological Studies online and part-time at{' '}
-        <Link to="https://www.calvinseminary.edu/">Calvin Seminary</Link>. This
-        blog is my place to share what I'm learning.
+        <Link to="https://www.calvinseminary.edu/">
+          Calvin Theological Seminary
+        </Link>
+        . This blog is my place to share what I'm learning.
       </p>
       <p>
         You can think of this blog as SparkNotes for seminary. I take class

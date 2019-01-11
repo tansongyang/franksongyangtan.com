@@ -82,5 +82,5 @@ This is a little quiz on the order of books in the Protestant Bible.
 
 </x-quiz>
 
-I originally built this to help prepare for the
+I built this to practice for the
 <x-link to="/seminary/bible-survey-advanced-standing-exam">Bible Survey Advanced Standing Exam</x-link>.
