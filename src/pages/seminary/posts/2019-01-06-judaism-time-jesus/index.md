@@ -2,7 +2,7 @@
 path: '/seminary/judaism-time-jesus'
 category: 'seminary'
 title: 'Judaism in the Time of Jesus'
-description: 'What is the class about?'
+description: 'A class about the second temple period.'
 date: '2019-01-06'
 tags: 'judaism-time-jesus'
 ---
@@ -45,5 +45,6 @@ In all posts related to this class, I will refer to this book as <cite>VanderKam
 - Construction of the first temple: <x-link to="https://www.bible.com/bible/100/1KI.6.NASB">1 Kings 6</x-link>
 - Destruction and exile: <x-link to="https://www.bible.com/bible/100/2KI.25.8-10.NASB">1 Kings 25:8-10</x-link>.
 - Cyrus's decree: <x-link to="https://www.bible.com/bible/100/EZR.1.1-4.NASB">Ezra 1:1-4</x-link>.
+- Construction of the second temple: <x-link to="https://www.bible.com/bible/100/EZR.3.8-13.NASB">Ezra 3:8</x-link>-<x-link to="https://www.bible.com/bible/100/EZR.6.NASB">Ezra 6</x-link>.
 
 </x-sources>
