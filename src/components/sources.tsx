@@ -11,7 +11,7 @@ export default function Sources({ children }: Props) {
     <>
       <h2>
         <Anchor href="#sources" />
-        Sources and further reading
+        Sources and Further Reading
       </h2>
       <details>
         <summary>Details</summary>

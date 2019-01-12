@@ -10,7 +10,7 @@ tags: 'judaism-time-jesus'
 My first class is Judaism in the Time of Jesus.
 In this class, we study a time in history called the second temple period.
 
-## What is the second temple period?
+## The Second Temple Period
 
 The <dfn>second temple period</dfn> begins in 538 BCE and ends in 70 CE.
 
@@ -22,7 +22,7 @@ In 538 BCE, the Persians defeated the Babylonians.
 That same year, the Persian king Cyrus the Great allowed the Jews to return to Jerusalem and rebuild the temple.
 They completed the second temple in 515 BCE, and it stood until the Romans destroyed it in 70 CE.
 
-## Why study the second temple period?
+## Why Study the Second Temple Period?
 
 Understanding the second temple period helps us understand Jesus' world.
 

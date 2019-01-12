@@ -8,7 +8,7 @@ import { pageTitle } from '../../utils/formats'
 
 const SIDE_PROJECTS = [
   {
-    title: 'This site',
+    title: 'This Site',
     description: (
       <>
         The site you're on right now! You can read more about it{' '}

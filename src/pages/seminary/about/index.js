@@ -5,7 +5,7 @@ import Layout from '../../../components/layout'
 import Link from '../../../components/link'
 import { pageTitle } from '../../../utils/formats'
 
-const TITLE = 'About my seminary blog'
+const TITLE = 'About My Seminary Blog'
 
 export default function SeminaryAboutPage() {
   return (

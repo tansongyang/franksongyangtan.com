@@ -5,7 +5,7 @@ import Layout from '../../../components/layout'
 import Link from '../../../components/link'
 import { pageTitle } from '../../../utils/formats'
 
-const TITLE = 'How I built this site'
+const TITLE = 'How I Built This Site'
 
 export default function CodeSitePage() {
   return (
