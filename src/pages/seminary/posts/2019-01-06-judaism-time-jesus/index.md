@@ -7,43 +7,37 @@ date: '2019-01-06'
 tags: 'judaism-time-jesus'
 ---
 
-## Introduction
-
-My first class is the elective Judaism in the Time of Jesus.
-In this class, we study the second temple period as background for the New Testament.
-
-The textbook for this class is <cite><x-link to="https://www.amazon.com/Introduction-Early-Judaism-James-Vanderkam/dp/0802846416">An Introduction to Early Judaism</x-link></cite> by James C. VanderKam.
-In all posts related to this class, I will refer to this book as <cite>VanderKam</cite>.
+My first class is Judaism in the Time of Jesus.
+In this class, we study a time in history called the second temple period.
 
 ## What is the second temple period?
 
-The second temple period begins in 538 BCE and ends in 70 CE.
+The <dfn>second temple period</dfn> begins in 538 BCE and ends in 70 CE.
 
 Solomon built the first temple in Jerusalem in the 900s BCE.
 The Babylonians destroyed it in 586 BCE when they conquered Jerusalem.
 They then exiled many Jews to Babylon.
 
 In 538 BCE, the Persians defeated the Babylonians.
-The Persian king Cyrus the Great allowed the Jews to return and rebuild the temple.
-That same year, the first exiles arrived in Jerusalem and began the work.
-
-In 515 BCE, the second temple was finally completed.
-It stood until the Romans destroyed it in 70 CE.
+That same year, the Persian king Cyrus the Great allowed the Jews to return to Jerusalem and rebuild the temple.
+They completed the second temple in 515 BCE, and it stood until the Romans destroyed it in 70 CE.
 
 ## Why study the second temple period?
 
 Understanding the second temple period helps us understand Jesus' world.
 
 The Bible is mostly silent about this period.
-Ezra and Nehemiah lived in the 400s BCE.
-Esther also takes place during this time.
-But after that, the Bible records nothing until the birth of Jesus.
+Ezra, Nehemiah, and Esther all take place in the 400s BCE.
+After that, the Bible records nothing until the birth of Jesus.
 
 About four centuries passed before Jesus entered the story.
 What happened?
 I plan to cover the highlights in future posts.
 
 <x-sources>
+
+The textbook for this class is <cite><x-link to="https://www.amazon.com/Introduction-Early-Judaism-James-Vanderkam/dp/0802846416">An Introduction to Early Judaism</x-link></cite> by James C. VanderKam.
+In all posts related to this class, I will refer to this book as <cite>VanderKam</cite>.
 
 - <cite>VanderKam, pp. 1-11</cite>
 - <x-link to="https://www.jewishvirtuallibrary.org/the-babylonian-exile">The Babylonian Exile</x-link>
