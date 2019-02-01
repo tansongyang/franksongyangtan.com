@@ -43,7 +43,9 @@ export default function SeminaryIndexPage({ data }) {
 export const pageQuery = graphql`
   query SeminaryIndexQuery {
     allMarkdownRemark(
-      filter: { frontmatter: { category: { eq: "seminary" } } }
+      filter: {
+        frontmatter: { published: { eq: true }, category: { eq: "seminary" } }
+      }
       sort: { order: DESC, fields: [frontmatter___date] }
       limit: 1000
     ) {
