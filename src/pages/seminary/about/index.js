@@ -20,12 +20,8 @@ export default function SeminaryAboutPage() {
         <Link to="https://www.calvinseminary.edu/">
           Calvin Theological Seminary
         </Link>
-        . This blog is my place to share what I'm learning.
-      </p>
-      <p>
-        You can think of this blog as SparkNotes for seminary. I take class
-        content and try to present it clearly and concisely. My goal is to make
-        theology more accessible.
+        . This blog is my place to share what I'm learning and why I think it
+        matters.
       </p>
     </Layout>
   )
