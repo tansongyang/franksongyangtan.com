@@ -1,4 +1,5 @@
 ---
+published: true
 path: '/seminary/bible-books-quiz'
 category: 'seminary'
 title: 'The Bible Books Quiz'
@@ -7,7 +8,7 @@ date: '2018-12-11'
 tags: 'advanced-standing-exam,bible-survey,quiz'
 ---
 
-This is a little quiz on the order of books in the Protestant Bible.
+This is a quiz on the order of books in the Protestant Bible.
 
 <x-quiz
     name="Bible Books Quiz"
@@ -81,6 +82,3 @@ This is a little quiz on the order of books in the Protestant Bible.
     ]'>
 
 </x-quiz>
-
-I built this to practice for the
-<x-link to="/seminary/bible-survey-advanced-standing-exam">Bible Survey Advanced Standing Exam</x-link>.
