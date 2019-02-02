@@ -33,7 +33,7 @@ Understanding a person helps us interact with them in a constructive way.
 If we know someone's past trauma, it helps us be patient with them in their present misbehavior.
 If we want to persuade someone, we have to understand their values and where those values came from.
 
-For Christians, the greatest commandments are to love God and love people[^1].
+For Christians, the greatest commandments are to love God and love people.[^1]
 And whether it is God or another person, I think the process is the same:
 understanding the past helps us love in the present.
 
