@@ -674,6 +674,10 @@ pre tt:after {
   content: '';
 }
 
+.with-spacing {
+  margin-bottom: marginBottom;
+}
+
 .screen-reader-only {
   position: absolute;
   left: -10000px;
