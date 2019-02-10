@@ -25,12 +25,12 @@ To really get to know someone, you have to understand how their past shaped them
 This is true not only of individuals but also of groups—families, nations, cultures.
 In fact, learning someone's personal history can only get you so far.
 Every individual exists as a member of various communities.
-To really understand them, you have to learn about the communities they grew up in.
+To really understand them, you also have to learn about the history of their communities.
 
 ## Beyond Understanding
 
 Understanding a person helps us interact with them in a constructive way.
-If we know someone's past trauma, it helps us be patient with them in their present misbehavior.
+If we know someone's past trauma, it helps us empathize with them.
 If we want to persuade someone, we have to understand their values and where those values came from.
 
 For Christians, the greatest commandments are to love God and love people.[^1]
