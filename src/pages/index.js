@@ -21,7 +21,7 @@ export default function IndexPage() {
         }}
         className="with-spacing"
         src="https://pbs.twimg.com/profile_images/985307670549692416/j9DaOXnR_400x400.jpg"
-        alt="Photo of Frank Tan (tansongyang)"
+        alt="Frank Tan (tansongyang)"
       />
       <p>
         My name is Frank Tan. On the internet, my username is usually my Chinese
