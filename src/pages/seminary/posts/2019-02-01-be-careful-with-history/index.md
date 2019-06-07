@@ -1,5 +1,4 @@
 ---
-published: true
 path: '/seminary/be-careful-with-history'
 category: 'seminary'
 title: 'Be Careful With History'

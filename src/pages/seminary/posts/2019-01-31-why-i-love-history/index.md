@@ -1,5 +1,4 @@
 ---
-published: true
 path: '/seminary/why-i-love-history'
 category: 'seminary'
 title: 'Why I Love History'

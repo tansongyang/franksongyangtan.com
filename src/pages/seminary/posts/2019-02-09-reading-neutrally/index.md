@@ -1,5 +1,4 @@
 ---
-published: true
 path: '/seminary/reading-neutrally'
 category: 'seminary'
 title: 'Reading Neutrally'

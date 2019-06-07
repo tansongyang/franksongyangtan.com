@@ -1,5 +1,4 @@
 ---
-published: true
 path: '/seminary/primary-sources'
 category: 'seminary'
 title: 'Primary Sources'
